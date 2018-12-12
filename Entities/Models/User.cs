@@ -26,6 +26,8 @@ namespace Entities.Models
 
         [Required(ErrorMessage = "Role is required")]
         public Roles Role { get; set; }
+
+        public virtual ICollection<WebSiteInfo> WebSitesInfo { get; set; }
     }
 
     public enum Roles
